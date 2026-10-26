@@ -23,7 +23,7 @@
 
 MODE MOB добавляет в мир новых существ с собственными анимированными моделями и поведением.
 
-Мод из серии MINECRAFT-MODE: худ и лечение — [MINECRAFT-MODE-HUD](https://github.com/KUZURAKI/MINECRAFT-MODE-HUD), транспорт — [MINECRAFT-MODE-TECH](https://github.com/KUZURAKI/MINECRAFT-MODE-TECH), тёмный персонаж — [MINECRAFT-MODE-DARKLORD](https://github.com/KUZURAKI/MINECRAFT-MODE-DARKLORD). Каждый мод работает сам по себе.
+Мод из серии MINECRAFT-MODE: худ и лечение — [MINECRAFT-MODE-HUD](https://github.com/KUZURAKI/MINECRAFT-MODE-HUD), транспорт и рюкзак — [MINECRAFT-MODE-TECH](https://github.com/KUZURAKI/MINECRAFT-MODE-TECH), тёмный персонаж — [MINECRAFT-MODE-DARKLORD](https://github.com/KUZURAKI/MINECRAFT-MODE-DARKLORD). Каждый мод работает сам по себе.
 
 ## Гигантский тарантул
 
@@ -46,12 +46,26 @@ MODE MOB добавляет в мир новых существ с собств�
 ## Установка
 
 1. Установите **NeoForge 1.21.1** (версия 21.1.x).
-2. Скачайте `modemob-0.1.0.jar` и положите в папку `mods` вашей игры.
+2. Скачайте `modemob-*.jar` со страницы [Releases](https://github.com/KUZURAKI/MINECRAFT-MODE-MOB/releases) и положите в папку `mods` вашей игры.
 3. Запустите игру.
 
 ## Настройки
 
 Файл `config/modemob-common.toml` создаётся после первого запуска: `spawnRarity` — насколько редко появляется тарантул, чем больше, тем реже.
+
+## Релиз
+
+Сборка и релиз запускаются только по тегу. Обычные пуши ничего не публикуют.
+
+```bash
+git tag v0.1.0
+```
+
+```bash
+git push origin v0.1.0
+```
+
+GitHub Actions соберёт мод с версией из тега и выложит `modemob-0.1.0.jar` в Releases.
 
 ## Сборка
 
